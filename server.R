@@ -19,6 +19,8 @@ shinyServer(
     output$netProfit <- renderPrint(netInc())
    
     output$tax <- renderPrint(taxAmt())
+    output$summary <- renderText("This application is used to analyze whatif scenarios of any Company's financials.")
+    output$tax_explation <- renderText("Tax Rate is used to compute the tax amount")
   }
   
 )
